@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/inter.css" />
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="vendor/style.css" />
+    <script src="/index.js" defer></script>
+    <title>Estelab</title>
+  </head>
+  <body class="body">
+    <main>
+      <button aria-label="Открыть форму" type="button" class="button-open-popup">Открыть форму</button>
+      <section class="popup">
+          <div class="popup__container">
+            <h3 class="popup__title">Заполните заявку на консультацию</h3>
+            <p class="popup__subtitle">Наш специалист свяжется с Вами и ответит на любые вопросы</p>
+            <form
+              method="post"
+              name="popup-form"
+              action="#"
+              class="popup__form"
+            >
+            <div class="popup__collumn">
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Имя"
+                class="popup__input"
+                minlength="2"
+                maxlength="40"
+                required
+              />
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Телефон"
+                class="popup__input"
+                required
+              />
+            </div>
+              <input
+                id="job"
+                name="job"
+                type="text"
+                placeholder="Напишите, какой у Вас вопрос"
+                class="popup__input"
+                minlength="2"
+                maxlength="200"
+                required
+            />
+            <div class="popup__collumn">
+              <button type="submit" class="popup__button">Получить консультацию</button>
+              <p class="popup__data">Я соглашаюсь на <a class="popup__link" href="#">обработку персональных данных</a></p>
+            </div>
+            </form>
+            <button aria-label="Закрыть" type="button" class="popup__close">x</button>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2023. Выполнил Артем</p>
+    </footer>
+  </body>
+</html>
